@@ -1,0 +1,148 @@
+.container{
+    background:url(../imgs/brooke-lark-oGCF9yywFCM-unsplash.jpg);
+    background-size:cover;
+    background-position:center;
+    margin-top:50px;
+    border-radius:20px;
+    height:90vh;
+}
+header{
+    position:fixed;
+    width:45%;
+    right:60px;
+    color:#eee;
+    text-shadow:1px 2px 1px rgba(0,0,0,.4);
+
+}
+header > h1{
+    margin-left:100px;
+    width:300px;
+    display: flex;
+    justify-content:center;
+}
+.navbar{
+    position:fixed;
+    width:40%;
+    right:-730px;
+    top:-56px;
+    border-radius:0px 20px 20px  0px;
+    height:682px;
+    transition: all 2s;
+    background:rgba(0,0,0,.9);
+
+}
+.change{
+    right:-390px;
+    background:rgba(0,0,0,.8);
+}
+.navbar ul li{
+    margin-bottom:50px;
+    list-style:none;
+}
+.navbar ul li >a{
+    text-decoration: none;
+    color:#eee;
+    font-size:20px;
+}
+.hamburger-menu{
+    width:35px;
+    height:30px;
+    position:fixed;
+    top:65px;
+    right:90px;
+    cursor:pointer;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+.line{
+    width:100%;
+    height:3px;
+    background:#eee;
+    transition:all 1s;
+}
+
+.change .line-1{
+    transform:rotateZ(-405deg) translate(-8px, 6px);
+}
+.change .line-2{
+    opacity:0;
+}
+.change .line-3{
+    transform:rotateZ(405deg) translate(-8px, -6px);
+}
+.sesion1{
+    background:rgba(238, 238, 238,.3);
+    backdrop-filter:blur(20px);
+    width:50%;
+    padding:10px 10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    border-radius:20px 0px 0px 20px;;
+    margin-left:-12px;
+}
+.sesion1__content{
+
+    position:relative;
+    left:250px;
+    font-size:15px;
+    padding:0px 110px 0px 0px;
+    color:#eee;
+}
+.sesion1__content >h2{
+    font-size:90px;
+    text-shadow:1px 2px 1px rgba(0,0,0,.4);
+}
+
+
+footer{
+    position:absolute;
+    background:rgba(0,0,0,.3);
+    backdrop-filter:blur(15px);
+    display: flex;
+    justify-content: space-between;
+    margin-top:-80px;
+    width:45%;
+    margin-left:-12px;
+    border-radius:0px 0px 0px 20px;
+  box-sizing:border-box;
+  color:#eee;
+}
+.right, .pefilphoto{
+    background:rgba(0,0,0,.5);
+    width:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pefilphoto{
+    border-radius:0px 0px 0px 20px;
+}
+.bx-chevron-left{
+    color:#eee;
+    font-size:50px;
+    animation: h2 2s infinite alternate linear;
+}
+.pefilphoto > img{
+    width:60%;
+    height:50%;
+    border-radius:10em;
+    object-fit:cover;
+    object-position:top;
+    filter:drop-shadow(0px 2px 1px rgba(255,255,255,.4));
+}
+#recipe{
+    color:rgb(197, 197, 35);
+    position:absolute;
+    right:340px;
+    background:rgba(255,255,255,.3);
+    bottom:30px;
+    font-size:20px;
+    text-shadow:1px 2px 1px rgba(0,0,0,.4);
+}
+@keyframes h2{
+    0%{transform:translatex(-10px);}
+}
